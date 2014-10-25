@@ -59,6 +59,6 @@ tokenizer.on('end', function () {
     }
 });
 tokenizer.on('data', function (word) {
-    wordSet[word] = true;
+    wordSet[word.toLowerCase()] = true;
 });
 
